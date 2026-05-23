@@ -1,4 +1,3 @@
-
 const circles = document.querySelectorAll('.circle');
 
 circles.forEach(circle => {
@@ -50,6 +49,7 @@ circles.forEach(circle => {
         }
     }, 20); // speed control
 });
+
 function toggleMenu() {
   let menu = document.getElementById("menu");
 
@@ -58,4 +58,16 @@ function toggleMenu() {
   } else {
     menu.style.right = "0px";
   }
+}
+}
+function funnyResume() {
+
+    let audio = new Audio("funny.mp4");
+
+    audio.play();
+
+    setTimeout(() => {
+        alert("😂 Aabhi nahi milega!");
+    }, 500);
+
 }
