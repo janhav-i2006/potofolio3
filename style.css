@@ -71,7 +71,7 @@ header{
     left: 0;
 
     width: 100%;
-
+    max-width: 1000px;
     z-index: 1000;
 
     background: #a8b5d0;
@@ -534,26 +534,24 @@ body {
     background: #4f46e5;
     transform: scale(1.05);
 }
-/* ===== MOBILE RESPONSIVE ===== 
+ 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .project-card {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 24px;
+  }
 
-@media (max-width: 768px){
-
-    .edu-item h3{
-        font-size: 20px;
-    }
-
-    .edu-item h4{
-        font-size: 18px;
-    }
-
-    .edu-item p{
-        font-size: 16px;
-    }
-
-    .edu-box{
-        padding: 18px;
-    }
-} */
+}
  /* ===== SMOOTH SCROLL ===== */
 
 html{
@@ -699,6 +697,10 @@ section {
   max-width: 900px;
   margin: auto;
   padding: 40px 20px;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 /* ===== ABOUT ===== */
